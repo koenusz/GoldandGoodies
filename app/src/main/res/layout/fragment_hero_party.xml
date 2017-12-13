@@ -1,0 +1,103 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/heroParty"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    tools:context="net.gg.goldandgoodies.encounter.HeroPartyFragment">
+
+
+    <TableRow
+        android:id="@+id/heroIconRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/leftHero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:contentDescription="@string/heroIcon"
+            android:src="@drawable/ic_dwarf_face" />
+
+        <ImageView
+            android:id="@+id/middleHero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:contentDescription="@string/heroIcon"
+            android:src="@drawable/ic_elf_helmet" />
+
+        <ImageView
+            android:id="@+id/rightHero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:contentDescription="@string/heroIcon"
+            android:src="@drawable/ic_orc_head" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/skillRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/leftskill1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/skillicon"
+            android:src="@mipmap/axe_swing" />
+
+        <ImageView
+            android:id="@+id/leftskill2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/skillicon"
+            android:src="@mipmap/axe_swing" />
+
+        <ImageView
+            android:id="@+id/middleskill1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/skillicon"
+            android:src="@mipmap/axe_swing" />
+
+        <ImageView
+            android:id="@+id/middleskill2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/skillicon"
+            android:src="@mipmap/axe_swing" />
+
+        <ImageView
+            android:id="@+id/rightskill1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/skillicon"
+            android:src="@mipmap/axe_swing" />
+
+        <ImageView
+            android:id="@+id/rightskill2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/skillicon"
+            android:src="@mipmap/axe_swing" />
+    </TableRow>
+
+</TableLayout>
+
