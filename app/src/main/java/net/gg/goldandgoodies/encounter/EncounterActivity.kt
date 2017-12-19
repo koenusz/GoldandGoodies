@@ -1,5 +1,6 @@
 package net.gg.goldandgoodies.encounter
 
+import android.content.pm.ActivityInfo
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +14,7 @@ class EncounterActivity : HeroPartyFragment.OnFragmentInteractionListener, AppCo
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         setContentView(R.layout.activity_encounter)
     }
 }
